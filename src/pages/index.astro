@@ -8,10 +8,20 @@ import SkillLayout from '../components/SkillLayout.astro'
 import PostPreview from '@/components/blog/PostPreview.astro'
 
 import { Image } from 'astro:assets'
-import astro from '../assets/about-astro.png'
+import profilepic from '../assets/profilepic.jpg'
 
 const languages = ['Nederlands', 'Engels', 'Frans']
-const development = ['HTML', 'CSS', 'Typescript', 'Javascript', 'React', 'Vue', 'Angular', 'TailwindCSS', 'Nextjs']
+const development = [
+	'HTML',
+	'CSS',
+	'Typescript',
+	'Javascript',
+	'React',
+	'Vue',
+	'Angular',
+	'TailwindCSS',
+	'Nextjs'
+]
 const design = ['Figma', 'Adobe CC', 'User Testing', 'Spline']
 ---
 
@@ -19,9 +29,9 @@ const design = ['Figma', 'Adobe CC', 'User Testing', 'Spline']
 	<div class='flex w-full flex-col gap-y-10'>
 		<section class='flex flex-col items-center gap-y-7'>
 			<Image
-				src={astro}
+				src={profilepic}
 				alt='profile photo'
-				class='h-28 w-auto rounded-full bg-[#FFBE98] p-2'
+				class='h-28 w-auto rounded-full p-2 md:h-64'
 				loading='eager'
 			/>
 
@@ -59,7 +69,14 @@ const design = ['Figma', 'Adobe CC', 'User Testing', 'Spline']
 
 		<Section title='About'>
 			<p class='text-muted-foreground'>
-				Hallo, ik ben Zion Van der Wee, een gedreven Developer en UI Designer met een scherp oog voor front-end ontwikkeling en het creëren van uitstekende gebruikersinterfaces. Met een Bachelor in Toegepaste Informatica en Digital Experience Design ben ik goed onderlegd in het ontwerpen van intuïtieve en boeiende digitale ervaringen. Mijn technische vaardigheden en creatieve inzicht stellen me in staat om visueel aantrekkelijke en gebruiksvriendelijke applicaties te bouwen. Ik streef ernaar om de perfecte balans te vinden tussen esthetiek en functionaliteit, en ik ben altijd op zoek naar nieuwe manieren om de gebruikerservaring te verbeteren
+				Hallo, ik ben Zion Van der Wee, een gedreven Developer en UI Designer met een scherp oog
+				voor front-end ontwikkeling en het creëren van uitstekende gebruikersinterfaces. Met een
+				Bachelor in Toegepaste Informatica en Digital Experience Design ben ik goed onderlegd in het
+				ontwerpen van intuïtieve en boeiende digitale ervaringen. Mijn technische vaardigheden en
+				creatieve inzicht stellen me in staat om visueel aantrekkelijke en gebruiksvriendelijke
+				applicaties te bouwen. Ik streef ernaar om de perfecte balans te vinden tussen esthetiek en
+				functionaliteit, en ik ben altijd op zoek naar nieuwe manieren om de gebruikerservaring te
+				verbeteren
 			</p>
 		</Section>
 		<Section title='Experience'>
@@ -71,12 +88,9 @@ const design = ['Figma', 'Adobe CC', 'User Testing', 'Spline']
 				imageClass='h-12 w-auto md:-left-16'
 			>
 				<ul class='ml-4 list-disc text-muted-foreground'>
-					<li>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-						molestiae laboriosam pariatur!
-
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
-					</li>
+					<li>Maken van applicaties voor klanten en intern gebruik</li>
+					<li>Ontwikkelen van nieuwe features en het oplossen van bugs</li>
+					<li>Meest gebruikte programmeertalen: Django, PHP, NextJS, HTML en CSS</li>
 				</ul>
 			</Card>
 		</Section>
@@ -90,12 +104,7 @@ const design = ['Figma', 'Adobe CC', 'User Testing', 'Spline']
 				imageClass='h-12 w-auto md:-left-16'
 			>
 				<ul class='ml-4 list-disc text-muted-foreground'>
-					<li>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-						molestiae laboriosam pariatur!
-
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
-					</li>
+					<li>Gespecialiseerd in Application Development</li>
 				</ul>
 			</Card>
 			<Card
@@ -106,12 +115,8 @@ const design = ['Figma', 'Adobe CC', 'User Testing', 'Spline']
 				imageClass='h-12 w-auto md:-left-16'
 			>
 				<ul class='ml-4 list-disc text-muted-foreground'>
-					<li>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-						molestiae laboriosam pariatur!
-
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
-					</li>
+					<li>Leren werken met verschillende designtools zoals Figma, Adobe CC, Spline,...</li>
+					<li>Ontwerpen van User Interfaces en User Experiences</li>
 				</ul>
 			</Card>
 		</Section>
@@ -119,27 +124,24 @@ const design = ['Figma', 'Adobe CC', 'User Testing', 'Spline']
 		<Section title='Projects'>
 			<div class='flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0'>
 				<ProjectCard
-					href='https://www.google.com'
+					href='/flutter-pokemon-app'
 					heading='Flutter Pokemon App'
-					subheading='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-					imagePath='/src/assets/coming-soon.png'
-					altText='Example'
+					imagePath='/src/assets/Bee-Wary.png'
+					altText='Card for project: Flutter Pokemon App'
 					class='w-full sm:w-1/2'
 				/>
 				<ProjectCard
-					href='https://www.google.com'
+					href='/bee-wary'
 					heading='Bee-Wary'
-					subheading='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-					imagePath='/src/assets/coming-soon.png'
-					altText='Example'
+					imagePath='/src/assets/Bee-Wary.png'
+					altText='Card for project: Bee-Wary'
 					class='w-full sm:w-1/2'
 				/>
 				<ProjectCard
-					href='https://www.google.com'
+					href='/movie-tv-show-tracker'
 					heading='Movie/TV Show App (WIP)'
-					subheading='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-					imagePath='/src/assets/coming-soon.png'
-					altText='Example'
+					imagePath='/src/assets/Bee-Wary.png'
+					altText='Card for project: Movie/TV Show App'
 					class='w-full sm:w-1/2'
 				/>
 			</div>
