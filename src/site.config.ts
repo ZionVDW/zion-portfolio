@@ -29,8 +29,16 @@ export const menuLinks: Array<{ title: string; path: string }> = [
 		path: '/'
 	},
 	{
-		title: 'Blog',
-		path: '/blog/'
+		title: 'Flutter Pokemon App',
+		path: '/flutter-pokemon-app'
+	},
+	{
+		title: 'Bee-Wary',
+		path: '/bee-wary'
+	},
+	{
+		title: 'Movie/TV Show Tracker',
+		path: '/movie-tv-show-tracker'
 	}
 ]
 
